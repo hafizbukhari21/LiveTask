@@ -95,3 +95,39 @@
     }
 
 }
+
+
+@media (max-width:320px){
+    .modal-content{
+        .modal-body{
+            display: block;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+           
+        }
+        .statisticWrapper{
+            height: 18vh;
+            
+            text-align: center;
+            
+            h5{
+                margin-top: 3vh;
+                font-size: 20px;
+            }
+            .total{
+                font-size: 60px;
+                font-weight: bolder;
+            }
+            .totalregistered{
+                color: blue;
+            }
+            .totalproject{
+                color: chocolate;
+            }
+            .other{
+                color: cornflowerblue;
+            }
+        }
+    }
+
+}

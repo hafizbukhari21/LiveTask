@@ -90,4 +90,34 @@
     color: cornflowerblue;
   }
 }
+
+@media (max-width: 320px) {
+  .modal-content .modal-body {
+    display: block;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .modal-content .statisticWrapper {
+    height: 18vh;
+    text-align: center;
+  }
+  .modal-content .statisticWrapper h5 {
+    margin-top: 3vh;
+    font-size: 20px;
+  }
+  .modal-content .statisticWrapper .total {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  .modal-content .statisticWrapper .totalregistered {
+    color: blue;
+  }
+  .modal-content .statisticWrapper .totalproject {
+    color: chocolate;
+  }
+  .modal-content .statisticWrapper .other {
+    color: cornflowerblue;
+  }
+}
 /*# sourceMappingURL=modals.css.map */
