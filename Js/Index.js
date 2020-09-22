@@ -1,25 +1,44 @@
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("header")
-    header.classList.toggle("sticky", window.scrollY > 0) 
-})//header navbar add background on vertical scrolling
-
-var burgerMenucheck = document.querySelector("#check")
-burgerMenucheck.addEventListener("click",function(){
-    let mainmenu = document.querySelector(".mainMenu")
-    burgerMenucheck.checked ? mainmenu.style.left = "0%" : mainmenu.style.left = "-100%"
-})//sliding menu resposive mode
-
-// var viewport = window.innerWidth
-
-
 $(document).ready(function () {
-            
-     $("#myModal").modal();
+    scrollingNavbarEvent();
+    navbarBurgerIconResposiveTrigger();
+    mainContentAnim()        
+    $("#myModal").modal();
     animateValue("totalregistered",1,Random(),6000)
     animateValue("totalproject",1,Random(),6000)
     animateValue("other",1,Random(),6000)
 
 });
+
+function scrollingNavbarEvent(){
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header")
+        header.classList.toggle("sticky", window.scrollY > 0) 
+    })//header navbar add background on vertical scrolling
+}
+
+
+// var viewport = window.innerWidth
+
+function navbarBurgerIconResposiveTrigger(){
+    var burgerMenucheck = document.querySelector("#check")
+    burgerMenucheck.addEventListener("click",function(){
+    let mainmenu = document.querySelector(".mainMenu")
+    burgerMenucheck.checked ? mainmenu.style.left = "0%" : mainmenu.style.left = "-100%"
+})//sliding menu resposive mode
+}
+
+
+function mainContentAnim(){
+    let vp = window.innerWidth;
+    if (vp > 858){
+        let buttonXmodals = document.querySelector("#modalsClosedButton")
+        buttonXmodals.addEventListener("click", function(){
+            const element = document.querySelector('.description');
+            element.classList.add('animate__animated', 'animate__bounceInRight');   
+        })
+    }
+   
+}
 
 function Random(){
     let x =  Math.floor(Math.random() * 2000) + 1000;

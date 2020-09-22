@@ -18,6 +18,7 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
+  left: -100%;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   -webkit-box-align: center;
