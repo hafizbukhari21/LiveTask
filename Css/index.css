@@ -1,0 +1,140 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sticky {
+  background-color: #0D102F;
+  padding: 1.5% 10%;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 0.5% 10%;
+  z-index: 1000;
+}
+
+header .checkbtn {
+  display: none;
+  position: relative;
+  float: right;
+  font-size: 20px;
+  color: #FAFAFA;
+}
+
+header #check {
+  display: none;
+}
+
+header .logo {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 2px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: #FAFAFA;
+}
+
+header ul {
+  list-style-type: none;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li .buttonStart {
+  background-color: #33C17A;
+  padding: 5px 14px;
+  border-radius: 10px;
+}
+
+header ul li a {
+  position: relative;
+  text-decoration: none;
+  padding: 5px 14px;
+  margin: 0px 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #FAFAFA;
+}
+
+header ul li a span {
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+header ul li a:hover {
+  text-decoration: none;
+  background-color: #33C17A;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #FAFAFA;
+}
+
+@media (max-width: 858px) {
+  .sticky {
+    background-color: #0D102F;
+    padding: 4% 10%;
+  }
+  header {
+    padding: 2% 10%;
+    position: fixed;
+  }
+  header ul {
+    top: 0px;
+    left: -100%;
+    position: absolute;
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+    background-color: #0D102F;
+  }
+  header ul li {
+    padding: 0px;
+    margin: 0px;
+  }
+  header .checkbtn {
+    display: block;
+    float: right;
+  }
+}
+/*# sourceMappingURL=index.css.map */

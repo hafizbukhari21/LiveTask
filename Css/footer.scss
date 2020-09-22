@@ -1,0 +1,13 @@
+@import "../Css/variable";
+
+footer{
+    padding: 2% $leftRight-padding-nonResponsive;
+    background-color: black;
+    .wrapper{
+        color: $font-over-blue;
+        text-align: center;
+        p{
+            
+        }
+    }
+}

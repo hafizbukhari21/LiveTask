@@ -1,0 +1,318 @@
+@import "../Css/variable";
+
+.banner{
+    background-color: $dark-Blue;
+    height: 100vh;
+    width: 100%;
+    padding: 0% $leftRight-padding-nonResponsive;
+    .my_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        .description{
+            margin-top: 0vh;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            .wrapper{
+                padding: 10px;
+                h1{
+                    font-size: 55px;
+                    color: $pink;
+                    letter-spacing: 2px;
+                    padding: 0px;
+                    margin: 0px;
+                    margin-bottom: 2vh;
+                    width: 100%;
+                }
+                p{
+                    color: $font-over-blue;
+                    text-align: justify;
+                    width: 100%;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 5vh;
+                }
+                a{
+                    background-color: $pink;
+                    padding: 10px 20px;
+                    color: $font-over-blue;
+                    font-weight: bold;
+                    border-radius: 10px;
+                }
+            }
+            
+        }
+        .image{   
+          .wrapper{
+             
+              text-align: center;
+              margin-top: 30vh;
+              img{
+                  width: 100%;
+                  height: auto;
+              }
+          }
+        }    
+
+    }
+}
+
+.whyLiveTask{
+        .carousel-item{
+            padding-top: 20vh;
+            height: 100vh;
+            width: 100%;
+            padding: 0px $leftRight-padding-nonResponsive;
+            .contentCarousel{
+                
+            }
+            .part1{
+                margin-top: 20vh;
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr ;
+                height: 80vh;
+                grid-gap: 10%;
+                padding: 5% 0%;
+                div{
+                    text-align: center;
+                    justify-items: center;
+                    display: grid;
+                    grid-template-rows: minmax(50px,auto);
+                    padding: 10px;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+            .part2{
+                margin-top: 20vh;
+                display: grid;
+                grid-template-columns:1fr 1fr ;
+                height: 80vh;
+                padding: 5% 0%;
+            
+                .image{
+                    justify-items: center;
+                    text-align: center;
+                    img{
+                        width: 50%;
+                    }
+                }
+                .content{
+                   display: grid;
+                   grid-template-rows:1fr 1fr 1fr;
+                   h5{
+                       font-size: 40px;
+                       color: $pink;
+                   }
+                   p{
+                       font-size: 20px;
+                   }
+                }
+
+            }
+            .part3{
+
+            }
+        }
+        .carousel-item:nth-child(even){
+            background-color: $dark-Blue;
+            color: $font-over-blue;
+        }
+        .carousel-item:nth-child(odd){
+            background-color: $font-over-blue;
+            color: $dark-Blue;
+        }
+        .carouselButton{
+            opacity: 0.4;
+            border-radius: 10px;
+            background-color: $dark-Blue;
+        }
+        
+    
+    
+    
+}
+
+
+
+@media (max-width:858px){
+    .banner{
+        
+        background-color: $dark-Blue;
+        background-image: url("../Assets/bgMainTranparent.png");
+        background-size: 100% auto ;
+        height: 100vh;
+        width: 100%;
+        padding: 0% $leftRight-padding-nonResponsive;
+        
+        .my_container{
+            display: grid;
+            grid-template-columns: none;
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 20px;
+    
+            .description{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+               
+                .wrapper{
+                    h1{
+                        font-size: 35px;
+                        color:$pink;
+                        letter-spacing: 2px;
+                        padding: 0px;
+                        margin: 0px;
+                        text-align: justify;
+                        margin-bottom: 2vh;
+                        width: 100%;
+                        
+                    }
+                    p{
+                        margin-bottom: 3vh;
+                        color: $font-over-blue;
+                        text-align: justify;
+                        width: 100%;
+                        font-size: 15px;
+                        line-height: 27px;
+
+                    }
+                }
+                
+            }
+            .image{
+                display: none;
+              .wrapper{
+                  margin-top: 10vh;
+                  text-align: center;
+                  img{
+                      width: 70%;
+                      height: auto;
+                    }
+                }
+            }    
+        }
+    }
+
+    .whyLiveTask{
+        .carousel-item{
+            padding-top: 20vh;
+            height: 100vh;
+            width: 100%;
+            padding: 0px $leftRight-padding-nonResponsive;
+            .contentCarousel{
+                
+            }
+            .part1{
+                margin-top: 0vh;
+                display: block;
+                grid-template-columns:1fr 1fr 1fr ;
+                height: 80vh;
+                grid-gap: 10%;
+                padding: 5% 0%;
+                div{
+                    text-align: center;
+                    justify-items: center;
+                    display: grid;
+                    grid-template-rows: minmax(50px,auto);
+                    padding: 10px;
+                    img{
+                        width: 14vh;
+                    }
+                }
+            }
+            .part2{
+                margin-top: 13vh;
+                display: block;
+                grid-template-columns:0fr 1fr 0fr;
+                height: 100vh;
+                padding: 5% 0%;
+
+                .dummy{
+                    display: none;
+                }
+            
+                .image{
+                    justify-items: center;
+                    text-align: center;
+                    img{
+                        width: 80%;
+                    }
+                    margin-bottom: 2vh;
+                }
+                .content{
+                   display: grid;
+                   grid-template-rows:1fr 1fr 1fr;
+                   text-align: center;
+                   h5{
+                       font-size: 40px;
+                       color: $pink;
+                   }
+                   p{
+                       font-size: 20px;
+                   }
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:320px){
+
+    .banner{
+        background-color: $dark-Blue;
+        height: 100vh;
+        width: 100%;
+        padding: 0% $leftRight-padding-nonResponsive;
+        
+        .my_container{
+            display: grid;
+            grid-template-columns: none;
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 20px;
+    
+            .description{
+                
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                align-items: left;
+                text-align: left;
+                justify-content: left;
+                .wrapper{
+                    h1{
+                        font-size: 25px;
+                        color:$pink;
+                        letter-spacing: 2px;
+                        padding: 0px;
+                        margin: 0px;
+                        
+                        margin-bottom: 2vh;
+                        width: 100%;
+                    }
+                    p{
+                        margin-bottom: 3vh;
+                        color: $font-over-blue;
+                        text-align: justify;
+                        width: 100%;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    a{
+                        padding: 4px 10px ;
+                        border-radius: 4px;
+                    }
+                }
+                
+            }
+           
+        }
+    }
+}

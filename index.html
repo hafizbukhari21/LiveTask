@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/content.css">
+    <link rel="stylesheet" href="Css/modals.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <a class="logo" href="#">LiveTask</a>
+        <ul class="mainMenu">
+            <li>
+               
+                <a href="" class="buttonStart">
+                   Start
+                </a>
+            </li>
+            <li><a class="whyLT" href="#whyLiveTask">
+                    <span>
+                        <i class="far fa-comment-dots"></i>
+                    </span>
+                    Why Live Task?
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span>
+                        <i class="fas fa-users"></i>
+                    </span>
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    </header>
+
+
+    <section class="banner">
+        <div class="my_container">
+            <div class="description">
+                <div></div>
+               <div class="wrapper">
+                    <h1>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus, temporibus debitis, optio tenetur adipisci esse libero culpa ad facere molestias tempore. Quas assumenda quae culpa fugit molestias. Incidunt, tempore.</p>
+                    <a href="http://">Getting Started</a>
+                </div>
+               <div></div>
+            </div>
+            <div class="image">
+                <div class="wrapper">
+                    <img src="Assets/discuss.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whyLiveTask" id="whyLiveTask">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <div class="contentCarousel part1">
+                   <div>
+                       <h3>Lorem, ipsum dolor.</h3>
+                       <img src="Assets/icon1.png" alt="">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid?</p>
+                    </div>
+                   <div>
+                       <h3>Lorem ipsum dolor sit.</h3>
+                       <img src="Assets/icon2.png" alt="">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid?</p>
+                    </div>
+                   <div>
+                       <h3>Lorem, ipsum.</h3>
+                       <img src="Assets/icon3.png" alt="">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquid?</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="contentCarousel part2">
+                    <div class="image">
+                        <img src="Assets/phoneMockup.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="dummy"></div>
+                        <div>
+                            <h5>Lorem ipsum dolor sit.</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, doloremque!</p>
+                        </div>
+                        <div class="dummy"></div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="contentCarousel part3">
+                    <h1>Why LiveTask 3</h1>
+                    <p>Coming soon..</p>
+                </div>
+              </div>
+            </div>
+            <a class=" carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class=" carouselButton carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class=" carouselButton carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <p>Copyright  &#169; Live Task 2020 </p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        
+        <!-- Modal content-->
+        <div class="modal-content ">
+            <div class="modal-header">
+            
+            <h4 class="modal-title">Nggak Sombong.</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="statisticWrapper">
+                    <h5>Total Registered</h5>
+                    <p class="total totalregistered">100</p>
+                </div>
+                <div class="statisticWrapper">
+                    <h5>Total Projects</h5>
+                    <p class="total totalproject">200</p>
+                </div>
+                <div class="statisticWrapper">
+                    <h5>Other Statistic</h5>
+                    <p class="total other">300</p>
+                </div>
+                
+                
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+  
+
+
+   
+    
+
+
+
+    
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="Js/Index.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>

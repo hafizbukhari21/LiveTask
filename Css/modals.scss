@@ -1,0 +1,70 @@
+.modal{
+    z-index: 10000;
+}
+
+.modal-content{
+    .modal-body{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+       
+    }
+    .statisticWrapper{
+        height: 30vh;
+        
+        text-align: center;
+        
+        h5{
+            margin-top: 6vh;
+            font-size: 30px;
+        }
+        .total{
+            font-size: 70px;
+            font-weight: bolder;
+        }
+        .totalregistered{
+            color: blue;
+        }
+        .totalproject{
+            color: chocolate;
+        }
+        .other{
+            color: cornflowerblue;
+        }
+    }
+}
+
+@media (max-width:858px){
+    .modal-content{
+        .modal-body{
+            display: block;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+           
+        }
+        .statisticWrapper{
+            height: 18vh;
+            
+            text-align: center;
+            
+            h5{
+                margin-top: 3vh;
+                font-size: 30px;
+            }
+            .total{
+                font-size: 60px;
+                font-weight: bolder;
+            }
+            .totalregistered{
+                color: blue;
+            }
+            .totalproject{
+                color: chocolate;
+            }
+            .other{
+                color: cornflowerblue;
+            }
+        }
+    }
+
+}

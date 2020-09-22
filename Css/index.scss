@@ -1,0 +1,132 @@
+@import "../Css/variable";
+
+//khusus navbar dan global styling
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 200vh;
+    font-family: 'Roboto', sans-serif;
+    // filter: invert(1) hue-rotate(180deg);
+
+}
+
+.sticky{ //header tag when pannel scrolling 
+    background-color: $dark-Blue;
+    padding: 1.5% $leftRight-padding-nonResponsive;
+}
+
+header{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0.5% $leftRight-padding-nonResponsive;
+    z-index: 1000;
+    .checkbtn{
+        display: none;
+        position: relative;
+        float: right;
+        font-size: 20px;
+        color: $font-over-blue;
+    }
+    #check{
+        display: none;
+    }
+    .logo{
+        text-decoration: none;
+        position: relative;
+        font-weight: 700;
+        font-size: 1em;
+        letter-spacing: 2px;
+        transition: 0.6s;
+        color:$font-over-blue;       
+    }
+    ul{
+        list-style-type: none;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transition: 0.5s;
+        li{
+            position: relative;
+            .buttonStart{
+                background-color: $pink;
+                padding: 5px 14px;
+                border-radius: 10px;
+            }
+            
+            a{
+                position: relative;
+                text-decoration: none;
+                padding: 5px 14px;
+                margin: 0px 15px;
+                transition: 0.5s;
+                color: $font-over-blue;
+
+                span{
+                    margin-right: 3px;
+                    font-size: 20px;
+                }
+            }
+            a:hover{
+                text-decoration: none;
+                background-color: $pink;
+                border-radius: 10px;
+                font-weight: bold;
+                color: $font-over-blue;
+            }
+
+            
+        }
+    }
+}
+
+
+
+
+@media (max-width:858px){
+
+    .sticky{ //header tag when pannel scrolling 
+        background-color: $dark-Blue;
+        padding: 4% $leftRight-padding-nonResponsive;
+    }
+
+    header{
+        padding: 2% $leftRight-padding-nonResponsive;
+        position:fixed;
+        ul{
+            top:0px;
+            left: -100%;
+            position: absolute;
+            display: grid;
+            
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            z-index: -1;
+            background-color: $dark-Blue;
+            li{
+                padding: 0px;
+                margin: 0px;
+                
+            }
+        }
+        .checkbtn{
+            display: block;
+            float: right;
+        }
+    }
+    
+ 
+}
+
