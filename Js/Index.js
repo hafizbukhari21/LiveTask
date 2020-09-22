@@ -14,7 +14,7 @@ burgerMenucheck.addEventListener("click",function(){
 
 $(document).ready(function () {
             
-    // $("#myModal").modal();
+     $("#myModal").modal();
     animateValue("totalregistered",1,Random(),1000)
     animateValue("totalproject",1,Random(),1000)
     animateValue("other",1,Random(),1000)
