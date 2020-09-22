@@ -110,19 +110,21 @@ header{
             left: -100%;
             position: absolute;
             display: grid;
-            
+            padding: 20vh 0vh;
             height: 100vh;
             width: 100%;
-            text-align: center;
+            text-align: left;
             z-index: -1;
             background-color: $dark-Blue;
             li{
+                font-size: 30px;
                 padding: 0px;
                 margin: 0px;
                 
             }
         }
         .checkbtn{
+            padding: 15px 20px;
             display: block;
             float: right;
         }

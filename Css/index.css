@@ -123,17 +123,20 @@ header ul li a:hover {
     position: absolute;
     display: -ms-grid;
     display: grid;
+    padding: 20vh 0vh;
     height: 100vh;
     width: 100%;
-    text-align: center;
+    text-align: left;
     z-index: -1;
     background-color: #0D102F;
   }
   header ul li {
+    font-size: 30px;
     padding: 0px;
     margin: 0px;
   }
   header .checkbtn {
+    padding: 15px 20px;
     display: block;
     float: right;
   }
