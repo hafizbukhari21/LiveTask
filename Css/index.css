@@ -128,7 +128,7 @@ header ul li a:hover {
     width: 100%;
     text-align: left;
     z-index: -1;
-    background-color: #0D102F;
+    background: linear-gradient(123deg, #0d102f 0%, #0d1064 100%);
   }
   header ul li {
     font-size: 30px;
