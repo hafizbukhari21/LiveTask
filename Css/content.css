@@ -6,6 +6,7 @@
 }
 
 .banner .my_container {
+  padding-top: 25vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -18,16 +19,14 @@
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  left: -100%;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .banner .my_container .description .wrapper {
-  padding: 10px;
+  padding-right: 10px;
 }
 
 .banner .my_container .description .wrapper h1 {
@@ -59,7 +58,6 @@
 
 .banner .my_container .image .wrapper {
   text-align: center;
-  margin-top: 30vh;
 }
 
 .banner .my_container .image .wrapper img {
@@ -97,6 +95,10 @@
 
 .whyLiveTask .carousel-item .part1 div img {
   width: 70%;
+}
+
+.whyLiveTask .carousel-item .part1 div h3 {
+  font-weight: 600;
 }
 
 .whyLiveTask .carousel-item .part2 {
@@ -201,7 +203,7 @@
     text-align: center;
   }
   .banner .my_container .image .wrapper img {
-    width: 70%;
+    width: 70vh;
     height: auto;
   }
   .whyLiveTask .carousel-item {
@@ -232,7 +234,7 @@
     width: 14vh;
   }
   .whyLiveTask .carousel-item .part2 {
-    margin-top: 13vh;
+    margin-top: 10vh;
     display: block;
     -ms-grid-columns: 0fr 1fr 0fr;
         grid-template-columns: 0fr 1fr 0fr;
@@ -248,7 +250,7 @@
     margin-bottom: 2vh;
   }
   .whyLiveTask .carousel-item .part2 .image img {
-    width: 80%;
+    width: 30vh;
   }
   .whyLiveTask .carousel-item .part2 .content {
     display: -ms-grid;
@@ -315,6 +317,72 @@
   .banner .my_container .description .wrapper a {
     padding: 4px 10px;
     border-radius: 4px;
+  }
+  .whyLiveTask .carousel-item {
+    padding-top: 20vh;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 10%;
+  }
+  .whyLiveTask .carousel-item .part1 {
+    margin-top: 0vh;
+    display: block;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    grid-gap: 10%;
+    padding: 2% 0%;
+  }
+  .whyLiveTask .carousel-item .part1 div {
+    text-align: center;
+    justify-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: minmax(50px, auto);
+        grid-template-rows: minmax(50px, auto);
+    padding: 10px;
+  }
+  .whyLiveTask .carousel-item .part1 div h3 {
+    font-size: 25px;
+  }
+  .whyLiveTask .carousel-item .part1 div img {
+    width: 10vh;
+  }
+  .whyLiveTask .carousel-item .part1 div p {
+    font-size: 20px;
+  }
+  .whyLiveTask .carousel-item .part2 {
+    margin-top: 5vh;
+    display: block;
+    -ms-grid-columns: 0fr 1fr 0fr;
+        grid-template-columns: 0fr 1fr 0fr;
+    height: 100vh;
+    padding: 5% 0%;
+  }
+  .whyLiveTask .carousel-item .part2 .dummy {
+    display: none;
+  }
+  .whyLiveTask .carousel-item .part2 .image {
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  .whyLiveTask .carousel-item .part2 .image img {
+    width: 20vh;
+  }
+  .whyLiveTask .carousel-item .part2 .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .whyLiveTask .carousel-item .part2 .content h5 {
+    font-size: 35px;
+    color: #33C17A;
+  }
+  .whyLiveTask .carousel-item .part2 .content p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=content.css.map */
