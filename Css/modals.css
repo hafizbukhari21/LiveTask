@@ -2,6 +2,11 @@
   z-index: 10000;
 }
 
+.modal-header {
+  background-color: #33C17A;
+  color: #FAFAFA;
+}
+
 .modal-content .modal-body {
   display: -ms-grid;
   display: grid;
@@ -35,6 +40,25 @@
 
 .modal-content .statisticWrapper .other {
   color: cornflowerblue;
+}
+
+.modal-footer p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.modal-footer a {
+  background-color: #33C17A;
+  color: #FAFAFA;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-footer a:hover {
+  background-color: #0D102F;
+  text-decoration: none;
 }
 
 @media (max-width: 858px) {

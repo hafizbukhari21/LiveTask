@@ -1,5 +1,12 @@
+@import "../Css/variable";
+
 .modal{
     z-index: 10000;
+}
+
+.modal-header{
+    background-color: $pink;
+    color: $font-over-blue;
 }
 
 .modal-content{
@@ -32,6 +39,26 @@
             color: cornflowerblue;
         }
     }
+
+    
+}
+
+.modal-footer{
+    p{
+        font-weight: bold;
+        font-size: 15px;
+    }
+   a{
+      background-color: $pink;
+      color:$font-over-blue;
+      padding: 5px 10px;
+      border-radius: 10px;
+      transition: 0.5s;
+   }
+   a:hover{
+       background-color: $dark-Blue;
+       text-decoration: none;
+   }
 }
 
 @media (max-width:858px){
