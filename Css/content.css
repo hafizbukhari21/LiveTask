@@ -163,10 +163,19 @@
   color: #0D102F;
 }
 
-.whyLiveTask .carouselButton {
-  opacity: 0.4;
-  border-radius: 10px;
-  background-color: #0D102F;
+.whyLiveTask .carousel-control-next, .whyLiveTask .carousel-control-prev {
+  color: #33C17A;
+  font-size: 25px;
+  opacity: 0.3;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: transparent;
+}
+
+.whyLiveTask .carousel-control-next:hover, .whyLiveTask .carousel-control-prev:hover {
+  opacity: 0.8;
+  background-color: #33C17A;
+  color: #FAFAFA;
 }
 
 @media (max-width: 858px) {
@@ -288,6 +297,11 @@
   }
   .whyLiveTask .carousel-item .part2 .content p {
     font-size: 20px;
+  }
+  .whyLiveTask .carousel-control-next:hover, .whyLiveTask .carousel-control-prev:hover {
+    opacity: 0.8;
+    background-color: transparent;
+    color: #33C17A;
   }
 }
 

@@ -156,14 +156,24 @@
             background-color: $font-over-blue;
             color: $dark-Blue;
         }
-        .carouselButton{
-            opacity: 0.4;
-            border-radius: 10px;
-            background-color: $dark-Blue;
-        }
         
-    
-    
+
+
+        .carousel-control-next, .carousel-control-prev{
+            color: $pink;
+            font-size: 25px;
+            opacity: 0.3;
+            transition: 1s;
+            background-color: transparent;
+        }
+        .carousel-control-next:hover, .carousel-control-prev:hover{
+            opacity: 0.8;
+            background-color: $pink;
+            color: $font-over-blue;
+        }
+
+       
+ 
     
 }
 
@@ -294,6 +304,13 @@
 
             }
         }
+
+        .carousel-control-next:hover, .carousel-control-prev:hover{
+            opacity: 0.8;
+            background-color: transparent;
+            color: $pink;
+        }
+
 
     }
 
