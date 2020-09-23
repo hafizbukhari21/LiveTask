@@ -105,6 +105,8 @@ header ul li a {
   color: #FAFAFA;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-bottom: transparent;
+  top: 0px;
 }
 
 header ul li a span {
@@ -114,10 +116,10 @@ header ul li a span {
 
 header ul li a:hover {
   text-decoration: none;
-  background-color: #33C17A;
-  border-radius: 10px;
-  font-weight: bold;
   color: #FAFAFA;
+  border-radius: 10px;
+  top: 10px;
+  border-radius: 0px;
 }
 
 @media (max-width: 858px) {

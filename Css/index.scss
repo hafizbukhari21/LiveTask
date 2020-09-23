@@ -83,19 +83,23 @@ header{
                 transition: 0.5s;
                 color: $font-over-blue;
                 box-sizing: border-box;
+                border-bottom: transparent;
+                top: 0px;
 
 
                 span{
                     margin-right: 3px;
                     font-size: 20px;
+                    
                 }
             }
             a:hover{
                 text-decoration: none;
-                background-color: $pink;
-                border-radius: 10px;
-                font-weight: bold;
                 color: $font-over-blue;
+                border-radius: 10px;
+                top: 10px;
+                border-radius: 0px;
+                
             }
 
             
