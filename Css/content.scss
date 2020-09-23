@@ -7,10 +7,13 @@
     padding: 0% $leftRight-padding-nonResponsive;
     .my_container{
         
-        padding-top: 25vh;
+        // padding-top: 25vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100vh;
         grid-gap: 20px;
+        
+        align-items: center;
         
 
         .description{
@@ -18,7 +21,9 @@
             height: 100vh;
             display: grid;       
             grid-template-rows: 1fr 1fr 1fr;
-            align-self: center;
+            
+            
+           
             .wrapper{
                 padding-right: 10px;
                 h1{
@@ -38,12 +43,20 @@
                     line-height: 30px;
                     margin-bottom: 5vh;
                 }
-                a{
+                .getStarted{
                     background-color: $pink;
                     padding: 10px 20px;
                     color: $font-over-blue;
                     font-weight: bold;
                     border-radius: 10px;
+                    transition: 0.5s;
+
+                }
+                .getStarted:hover{
+                    padding: 12px 24px;
+                    text-decoration: none;
+                    color: $pink;
+                    background-color: $font-over-blue;
                 }
             }
             
@@ -216,10 +229,11 @@
             }
             .part1{
                 margin-top: 0vh;
-                display: block;
-                grid-template-columns:1fr 1fr 1fr ;
+                display: grid;
+                grid-template-columns:none ;
+                grid-template-rows: 1fr 1fr 1fr;
                 height: 80vh;
-                grid-gap: 10%;
+                grid-gap: 10px;
                 padding: 5% 0%;
                 div{
                     text-align: center;

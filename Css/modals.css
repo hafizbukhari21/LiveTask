@@ -5,6 +5,12 @@
 .modal-header {
   background-color: #33C17A;
   color: #FAFAFA;
+  border-bottom: none;
+}
+
+.modal-header .close {
+  font-size: 30px;
+  color: #0D102F;
 }
 
 .modal-content .modal-body {
@@ -13,6 +19,7 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  background: linear-gradient(123deg, #0d102f 0%, #0d103c 100%);
 }
 
 .modal-content .statisticWrapper {
@@ -23,6 +30,7 @@
 .modal-content .statisticWrapper h5 {
   margin-top: 6vh;
   font-size: 30px;
+  color: #FAFAFA;
 }
 
 .modal-content .statisticWrapper .total {
@@ -31,15 +39,15 @@
 }
 
 .modal-content .statisticWrapper .totalregistered {
-  color: blue;
+  color: #33C17A;
 }
 
 .modal-content .statisticWrapper .totalproject {
-  color: chocolate;
+  color: #33C17A;
 }
 
 .modal-content .statisticWrapper .other {
-  color: cornflowerblue;
+  color: #33C17A;
 }
 
 .modal-footer p {
@@ -79,15 +87,6 @@
   .modal-content .statisticWrapper .total {
     font-size: 60px;
     font-weight: bolder;
-  }
-  .modal-content .statisticWrapper .totalregistered {
-    color: blue;
-  }
-  .modal-content .statisticWrapper .totalproject {
-    color: chocolate;
-  }
-  .modal-content .statisticWrapper .other {
-    color: cornflowerblue;
   }
 }
 

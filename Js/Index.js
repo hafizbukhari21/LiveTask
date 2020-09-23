@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    scrollingNavbarEvent();
-    navbarBurgerIconResposiveTrigger();
+    scrollingNavbarEvent()
+    navbarBurgerIconResposiveTrigger()
     mainContentAnim()        
     window.setTimeout(function () {
         modalController() 
@@ -21,23 +21,33 @@ function scrollingNavbarEvent(){
     })//header navbar add background on vertical scrolling
 }
 
-// var viewport = window.innerWidth
-
 function navbarBurgerIconResposiveTrigger(){
     var burgerMenucheck = document.querySelector("#check")
-    burgerMenucheck.addEventListener("click",function(){
+    let iconBurger = document.querySelector(".iconBurger")
     let mainmenu = document.querySelector(".mainMenu")
-    burgerMenucheck.checked ? mainmenu.style.left = "0%" : mainmenu.style.left = "-100%"
-})//sliding menu resposive mode
+
+    burgerMenucheck.addEventListener("click",function(){
+        // burgerMenucheck.checked ? mainmenu.style.left = "0%" : mainmenu.style.left = "-100%"
+        if (burgerMenucheck.checked){
+            iconBurger.classList.remove("fa-bars")
+            iconBurger.classList.add("fa-times")
+            mainmenu.style.left = "0%"
+        }
+        else{
+            iconBurger.classList.add("fa-bars")
+            iconBurger.classList.remove("fa-times")
+            mainmenu.style.left = "-100%"
+        }
+    })//sliding menu resposive mode
 }
 
 function mainContentAnim(){//banner description tag animation 
-    let vp = window.innerWidth;
+    let vp = window.innerWidth
     if (vp > 858){
         let buttonXmodals = document.querySelector("#modalsClosedButton")
         buttonXmodals.addEventListener("click", function(){
-            const element = document.querySelector('.description');
-            element.classList.add('animate__animated', 'animate__bounceInRight');
+            const element = document.querySelector('.description')
+            element.classList.add('animate__animated', 'animate__bounceInRight')
         })
     }
 }
@@ -50,33 +60,33 @@ function Random(){
 function animateValue(id, start, end, duration) {
     // assumes integer values for start and end
     
-    var obj = document.querySelector("."+id);
-    var range = end - start;
+    var obj = document.querySelector("."+id)
+    var range = end - start
     // no timer shorter than 50ms (not really visible any way)
-    var minTimer = 50;
+    var minTimer = 50
     // calc step time to show all interediate values
-    var stepTime = Math.abs(Math.floor(duration / range));
+    var stepTime = Math.abs(Math.floor(duration / range))
     
     // never go below minTimer
-    stepTime = Math.max(stepTime, minTimer);
+    stepTime = Math.max(stepTime, minTimer)
     
     // get current time and calculate desired end time
-    var startTime = new Date().getTime();
-    var endTime = startTime + duration;
-    var timer;
+    var startTime = new Date().getTime()
+    var endTime = startTime + duration
+    var timer
 
     function run() {
-        var now = new Date().getTime();
-        var remaining = Math.max((endTime - now) / duration, 0);
-        var value = Math.round(end - (remaining * range));
-        obj.innerHTML = value;
+        var now = new Date().getTime()
+        var remaining = Math.max((endTime - now) / duration, 0)
+        var value = Math.round(end - (remaining * range))
+        obj.innerHTML = value
         if (value == end) {
-            clearInterval(timer);
+            clearInterval(timer)
         }
     }
     
-    timer = setInterval(run, stepTime);
-    run();
+    timer = setInterval(run, stepTime)
+    run()
 }
 
 

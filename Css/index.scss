@@ -17,7 +17,7 @@ body{
 
 .sticky{ //header tag when pannel scrolling 
     background-color: $dark-Blue;
-    padding: 1.5% $leftRight-padding-nonResponsive;
+    padding: 1.5vh $leftRight-padding-nonResponsive;
 }
 
 header{
@@ -35,7 +35,7 @@ header{
         display: none;
         position: relative;
         float: right;
-        font-size: 20px;
+        font-size: 25px;
         color: $font-over-blue;
     }
     #check{
@@ -64,7 +64,16 @@ header{
                 padding: 5px 14px;
                 border-radius: 10px;
                 margin: 0px 20px;
+                transition: 0.5s;
+                box-sizing: border-box;
+                
             }
+            .buttonStart:hover{
+                background-color: $font-over-blue;
+                color: $pink;
+                padding: 7px 16px;
+            }
+
             
             a{
                 position: relative;
@@ -73,6 +82,8 @@ header{
                 margin: 0px 15px;
                 transition: 0.5s;
                 color: $font-over-blue;
+                box-sizing: border-box;
+
 
                 span{
                     margin-right: 3px;
@@ -99,30 +110,30 @@ header{
 
     .sticky{ //header tag when pannel scrolling 
         background-color: $dark-Blue;
-        padding: 4% $leftRight-padding-nonResponsive;
+        padding: 2.5% $leftRight-padding-nonResponsive;
     }
 
     header{
-        padding: 2% $leftRight-padding-nonResponsive;
+        padding: 1% $leftRight-padding-nonResponsive;
         position:fixed;
         ul{
             top:0px;
             left: -100%;
             position: absolute;
-            display: grid;
             padding: 20vh 0vh;
+            display: grid;
             height: 100vh;
             width: 100%;
             text-align: left;
             z-index: -1;
-            background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                font-size: 30px;
-                padding: 0px;
-                margin: 0px;
+            background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                
+            font-size: 25px;
+
                 
-            }
         }
+
+        
         .checkbtn{
-            padding: 15px 20px;
             display: block;
             float: right;
         }

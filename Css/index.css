@@ -12,7 +12,7 @@ body {
 
 .sticky {
   background-color: #0D102F;
-  padding: 1.5% 10%;
+  padding: 1.5vh 10%;
 }
 
 header {
@@ -39,7 +39,7 @@ header .checkbtn {
   display: none;
   position: relative;
   float: right;
-  font-size: 20px;
+  font-size: 25px;
   color: #FAFAFA;
 }
 
@@ -83,6 +83,16 @@ header ul li .buttonStart {
   padding: 5px 14px;
   border-radius: 10px;
   margin: 0px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header ul li .buttonStart:hover {
+  background-color: #FAFAFA;
+  color: #33C17A;
+  padding: 7px 16px;
 }
 
 header ul li a {
@@ -93,6 +103,8 @@ header ul li a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #FAFAFA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header ul li a span {
@@ -111,32 +123,27 @@ header ul li a:hover {
 @media (max-width: 858px) {
   .sticky {
     background-color: #0D102F;
-    padding: 4% 10%;
+    padding: 2.5% 10%;
   }
   header {
-    padding: 2% 10%;
+    padding: 1% 10%;
     position: fixed;
   }
   header ul {
     top: 0px;
     left: -100%;
     position: absolute;
+    padding: 20vh 0vh;
     display: -ms-grid;
     display: grid;
-    padding: 20vh 0vh;
     height: 100vh;
     width: 100%;
     text-align: left;
     z-index: -1;
-    background: linear-gradient(123deg, #0d102f 0%, #0d1046 100%);
-  }
-  header ul li {
-    font-size: 30px;
-    padding: 0px;
-    margin: 0px;
+    background: linear-gradient(123deg, #0d102f 0%, #0d103c 100%);
+    font-size: 25px;
   }
   header .checkbtn {
-    padding: 15px 20px;
     display: block;
     float: right;
   }

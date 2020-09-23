@@ -6,12 +6,16 @@
 }
 
 .banner .my_container {
-  padding-top: 25vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
   grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner .my_container .description {
@@ -21,8 +25,6 @@
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .banner .my_container .description .wrapper {
@@ -48,12 +50,21 @@
   margin-bottom: 5vh;
 }
 
-.banner .my_container .description .wrapper a {
+.banner .my_container .description .wrapper .getStarted {
   background-color: #33C17A;
   padding: 10px 20px;
   color: #FAFAFA;
   font-weight: bold;
   border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.banner .my_container .description .wrapper .getStarted:hover {
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #33C17A;
+  background-color: #FAFAFA;
 }
 
 .banner .my_container .image .wrapper {
@@ -214,11 +225,14 @@
   }
   .whyLiveTask .carousel-item .part1 {
     margin-top: 0vh;
-    display: block;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     height: 80vh;
-    grid-gap: 10%;
+    grid-gap: 10px;
     padding: 5% 0%;
   }
   .whyLiveTask .carousel-item .part1 div {

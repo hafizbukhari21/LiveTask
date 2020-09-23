@@ -7,6 +7,11 @@
 .modal-header{
     background-color: $pink;
     color: $font-over-blue;
+    .close{
+        font-size: 30px;
+        color: $dark-Blue;
+    }
+    border-bottom: none;
 }
 
 .modal-content{
@@ -14,6 +19,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
+        background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                
        
     }
     .statisticWrapper{
@@ -24,19 +30,20 @@
         h5{
             margin-top: 6vh;
             font-size: 30px;
+            color: $font-over-blue;
         }
         .total{
             font-size: 70px;
             font-weight: bolder;
         }
         .totalregistered{
-            color: blue;
+            color:$pink;
         }
         .totalproject{
-            color: chocolate;
+            color: $pink;
         }
         .other{
-            color: cornflowerblue;
+            color: $pink;
         }
     }
 
@@ -82,17 +89,11 @@
                 font-size: 60px;
                 font-weight: bolder;
             }
-            .totalregistered{
-                color: blue;
-            }
-            .totalproject{
-                color: chocolate;
-            }
-            .other{
-                color: cornflowerblue;
-            }
+            
         }
     }
+
+    
 
 }
 
