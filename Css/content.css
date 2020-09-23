@@ -173,7 +173,7 @@
 }
 
 .whyLiveTask .carousel-control-next:hover, .whyLiveTask .carousel-control-prev:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   background-color: #33C17A;
   color: #FAFAFA;
 }
