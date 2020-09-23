@@ -80,30 +80,40 @@
 .whyLiveTask{
         .carousel-item{
             padding-top: 20vh;
-            height: 100vh;
+            min-height:100vh;
             width: 100%;
             padding: 0px $leftRight-padding-nonResponsive;
             .contentCarousel{
                 
             }
             .part1{
-                margin-top: 20vh;
+                // margin-top: 20vh;
                 display: grid;
                 grid-template-columns:1fr 1fr 1fr ;
-                height: 80vh;
+                min-height: 100vh;
                 grid-gap: 10%;
                 padding: 5% 0%;
+                align-items: stretch;
+                
                 div{
                     text-align: center;
                     justify-items: center;
                     display: grid;
-                    grid-template-rows: minmax(50px,auto);
-                    padding: 10px;
+                    // grid-template-rows: minmax(,auto);
+                    grid-gap: 5%;
+                    padding: 5%;
+                    
+                    border-radius: 10px;
+                    
+
                     img{
-                        width: 70%;
+                        width: 30vh;
                     }
                     h3{
                         font-weight: 600;
+                    }
+                    p{
+                        font-size: 20px;
                     }
                 }
             }
@@ -165,7 +175,7 @@
         background-color: $dark-Blue;
         background-image: url("../Assets/bgMainTranparent.png");
         background-size: 100% auto ;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         padding: 0% $leftRight-padding-nonResponsive;
         
@@ -220,39 +230,42 @@
 
     .whyLiveTask{
         .carousel-item{
-            padding-top: 20vh;
-            height: 100vh;
+            min-height: 100vh;
             width: 100%;
             padding: 0px $leftRight-padding-nonResponsive;
             .contentCarousel{
                 
             }
             .part1{
+                padding-top: 0vh;
                 margin-top: 0vh;
                 display: grid;
                 grid-template-columns:none ;
-                grid-template-rows: 1fr 1fr 1fr;
-                height: 80vh;
-                grid-gap: 10px;
-                padding: 5% 0%;
+                grid-template-rows: auto;
+                min-height: 100vh;
+                grid-gap: 2vh;
+                // // padding: 5% 0%;
                 div{
+                    align-items: center;
                     text-align: center;
                     justify-items: center;
                     display: grid;
                     grid-template-rows: minmax(50px,auto);
                     padding: 10px;
+                    grid-gap: 2vh;
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.02);
                     img{
-                        width: 14vh;
+                        width: 20vh;
                     }
                 }
             }
             .part2{
                 
-                margin-top: 10vh;
+                // margin-top: 10vh;
                 display: block;
                 grid-template-columns:0fr 1fr 0fr;
                 height: 100vh;
-                padding: 5% 0%;
+                // padding: 5% 0%;
 
                 .dummy{
                     display: none;

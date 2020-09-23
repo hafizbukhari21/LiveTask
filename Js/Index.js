@@ -2,9 +2,10 @@ $(document).ready(function () {
     scrollingNavbarEvent()
     navbarBurgerIconResposiveTrigger()
     mainContentAnim()        
-    window.setTimeout(function () {
-        modalController() 
-    },2000)
+    // window.setTimeout(function () {
+    //     modalController() 
+    // },4000)
+    
 });
 
 function modalController(){// dummy time on when loading data
