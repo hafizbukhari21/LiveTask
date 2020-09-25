@@ -4,7 +4,7 @@ $(document).ready(function () {
     mainContentAnim()        
     window.setTimeout(function () {
         modalController()
-    },4000) 
+    },4000)// 
     window.setTimeout(function () {
         setUpGoTOpButton()
     },10000) 
