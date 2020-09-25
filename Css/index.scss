@@ -66,12 +66,19 @@ header{
                 margin: 0px 20px;
                 transition: 0.5s;
                 box-sizing: border-box;
-                
+                opacity: 0;
+                pointer-events: none;
+            }
+            .buttonStartSticky{
+                pointer-events: visible;
+                opacity: 1;
             }
             .buttonStart:hover{
                 background-color: $font-over-blue;
                 color: $pink;
-                padding: 7px 16px;
+                border-radius: 10px;
+                padding: 6px 15px;
+                top: 0px;
             }
 
             
@@ -108,6 +115,47 @@ header{
 }
 
 
+.goTopButton{
+    color:$font-over-blue;
+    position: fixed;
+    z-index: 10000000;
+    width: 100%;
+    height: 100vh;
+    top:90vh;
+    left: 95%;
+
+    a{
+        padding: 10px;
+        background-color: $pink;
+        color: $font-over-blue;
+        border-radius: $font-over-blue;
+        border-radius: 100%;
+        font-size: 15px;
+        transition: 0.5s;
+        animation: updown 2s infinite;
+        position: relative;
+    }
+
+    @keyframes updown {
+       0%{
+           top:0px;
+       }
+       50%{
+           top:20px;
+       }
+       100%{
+           top:0px;
+       }
+    }
+    a:hover{
+        background-color: $font-over-blue;
+        color: $pink;
+    }
+
+
+}
+
+
 
 
 @media (max-width:858px){
@@ -132,8 +180,10 @@ header{
             z-index: -1;
             background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                
             font-size: 25px;
-
                 
+        }
+        .buttonStart{
+            opacity: 1;
         }
 
         
@@ -141,6 +191,26 @@ header{
             display: block;
             float: right;
         }
+    }
+
+    .goTopButton{
+        color:$font-over-blue;
+        position: fixed;
+        z-index: 10000000;
+        width: 100%;
+        height: 100vh;
+        top:90vh;
+        left: 80%;
+    
+        a{
+            padding: 15px;
+            background-color: $pink;
+            color: $font-over-blue;
+            border-radius: $font-over-blue;
+            border-radius: 100%;
+        }
+    
+    
     }
     
  

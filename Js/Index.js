@@ -2,9 +2,10 @@ $(document).ready(function () {
     scrollingNavbarEvent()
     navbarBurgerIconResposiveTrigger()
     mainContentAnim()        
-    window.setTimeout(function () {
-        modalController() 
-    },4000)
+    // window.setTimeout(function () {
+    //     modalController() 
+    // },4000)
+    
     
 });
 
@@ -17,8 +18,15 @@ function modalController(){// dummy time on when loading data
 
 function scrollingNavbarEvent(){
     window.addEventListener("scroll", function(){
-        var header = document.querySelector("header")
+        let header = document.querySelector("header")
+        let buttonStart = document.querySelector(".buttonStart")
         header.classList.toggle("sticky", window.scrollY > 0) 
+        if(window.innerWidth > 858){   
+            buttonStart.classList.toggle("buttonStartSticky", window.scrollY>0) 
+        } 
+        else if (window.innerWidth == 375) {
+           buttonStart.classList.add("buttonStartSticky") 
+        }  
     })//header navbar add background on vertical scrolling
 }
 
@@ -48,7 +56,7 @@ function mainContentAnim(){//banner description tag animation
         let buttonXmodals = document.querySelector("#modalsClosedButton")
         buttonXmodals.addEventListener("click", function(){
             const element = document.querySelector('.description')
-            element.classList.add('animate__animated', 'animate__bounceInRight')
+            element.classList.add('animate__animated', 'animate__fadeInRight')
         })
     }
 }

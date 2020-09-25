@@ -19,6 +19,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
+        align-items: center;
+        height: 70vh;
         background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                
        
     }
