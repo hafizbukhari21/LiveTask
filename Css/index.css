@@ -13,7 +13,7 @@ body {
 
 .sticky {
   background-color: #0D102F;
-  padding: 1.5vh 10%;
+  padding: 2vh 10%;
 }
 
 header {
@@ -52,7 +52,7 @@ header .logo {
   text-decoration: none;
   position: relative;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 20px;
   letter-spacing: 2px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -73,6 +73,10 @@ header ul {
   display: flex;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header ul li {
@@ -83,7 +87,7 @@ header ul li .buttonStart {
   background-color: #33C17A;
   padding: 5px 14px;
   border-radius: 10px;
-  margin: 0px 20px;
+  margin-left: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-sizing: border-box;
@@ -108,8 +112,8 @@ header ul li .buttonStart:hover {
 header ul li a {
   position: relative;
   text-decoration: none;
-  padding: 5px 14px;
-  margin: 0px 15px;
+  padding: 14px;
+  margin-left: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #FAFAFA;

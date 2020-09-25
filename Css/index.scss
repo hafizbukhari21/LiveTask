@@ -18,7 +18,7 @@ body{
 
 .sticky{ //header tag when pannel scrolling 
     background-color: $dark-Blue;
-    padding: 1.5vh $leftRight-padding-nonResponsive;
+    padding: 2vh $leftRight-padding-nonResponsive;
 }
 
 header{
@@ -46,10 +46,10 @@ header{
         text-decoration: none;
         position: relative;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 20px;
         letter-spacing: 2px;
         transition: 0.6s;
-        color:$font-over-blue;       
+        color:$font-over-blue;     
     }
     ul{
         list-style-type: none;
@@ -58,13 +58,16 @@ header{
         align-items: center;
         display: flex;
         transition: 0.5s;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
         li{
             position: relative;
             .buttonStart{
                 background-color: $pink;
                 padding: 5px 14px;
                 border-radius: 10px;
-                margin: 0px 20px;
+                margin-left:20px;
                 transition: 0.5s;
                 box-sizing: border-box;
                 opacity: 0;
@@ -86,8 +89,8 @@ header{
             a{
                 position: relative;
                 text-decoration: none;
-                padding: 5px 14px;
-                margin: 0px 15px;
+                padding:14px;
+                margin-left: 15px;
                 transition: 0.5s;
                 color: $font-over-blue;
                 box-sizing: border-box;

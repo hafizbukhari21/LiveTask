@@ -103,24 +103,24 @@
     .part1{
         display: grid;
         grid-template-columns:1fr 1fr 1fr ;
-        min-height: auto;
+        min-height: 100vh;
         grid-gap: 4%;
         // padding: 5% 0%;
-        align-items: stretch;
+        align-items: center;
         
         div{
+            margin-top: 10vh;
             text-align: center;
             justify-items: center;
             display: grid;
             //grid-template-rows: minmax(,auto);
-            grid-gap: 5%;
-            padding: 5%;
+            grid-gap: 6%;
             margin-bottom: 20vh;
             border-radius: 10px;
             
         
             img{
-                width: 40%;
+                width: 50%;
                 margin-bottom: 5vh;
             }
             h3{

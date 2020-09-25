@@ -7,11 +7,19 @@ footer{
         color: $font-over-blue;
         display: flex;
         div{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
             flex-grow: 1;
+            .people{
+                font-size: 10px;
+                opacity: 0.2;
+            }
         }
         .cr{
             text-align: center;
-            opacity: 0.4;
+            opacity: 0.2;
+            font-size: 10px;
         }
     }
 }
