@@ -121,7 +121,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  min-height: 100vh;
+  min-height: auto;
   grid-gap: 10%;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -135,15 +135,23 @@
   display: grid;
   grid-gap: 5%;
   padding: 5%;
+  margin-bottom: 20vh;
   border-radius: 10px;
 }
 
 .content .part1 div img {
-  width: 30vh;
+  width: 70%;
+  margin-bottom: 5vh;
 }
 
 .content .part1 div h3 {
-  font-weight: 600;
+  font-size: 40px;
+  color: #33C17A;
+  letter-spacing: 2px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 2vh;
+  width: 100%;
 }
 
 .content .part1 div p {
