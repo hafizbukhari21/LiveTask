@@ -141,17 +141,17 @@ header{
     
     }
 
-    @keyframes updown {
-       0%{
-           top:0px;
-       }
-       50%{
-           top:20px;
-       }
-       100%{
-           top:0px;
-       }
-    }
+    // @keyframes updown {
+    //    0%{
+    //        top:0px;
+    //    }
+    //    50%{
+    //        top:20px;
+    //    }
+    //    100%{
+    //        top:0px;
+    //    }
+    // }
     a:hover{
         background-color: $font-over-blue;
         color: $pink;

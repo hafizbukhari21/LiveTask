@@ -158,30 +158,6 @@ header ul li a:hover {
   z-index: 0;
 }
 
-@-webkit-keyframes updown {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 20px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
-@keyframes updown {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 20px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
 .goTopButton a:hover {
   background-color: #FAFAFA;
   color: #33C17A;

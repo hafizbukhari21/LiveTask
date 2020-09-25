@@ -5,9 +5,22 @@ footer{
     background-color: black;
     .wrapper{
         color: $font-over-blue;
+        display: flex;
+        div{
+            flex-grow: 1;
+        }
+        .cr{
+            opacity: 0.4;
+        }
+    }
+}
+
+@media (max-width:858px){
+    footer{
+        padding: 1%;
         text-align: center;
-        p{
-            
+        .wrapper{
+            display: block;
         }
     }
 }

@@ -5,6 +5,28 @@ footer {
 
 footer .wrapper {
   color: #FAFAFA;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .wrapper div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+footer .wrapper .cr {
+  opacity: 0.4;
+}
+
+@media (max-width: 858px) {
+  footer {
+    padding: 1%;
+    text-align: center;
+  }
+  footer .wrapper {
+    display: block;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
