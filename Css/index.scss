@@ -123,6 +123,8 @@ header{
     height: 100vh;
     top:90vh;
     left: 95%;
+    z-index: 0;
+    opacity: 0;
 
     a{
         padding: 10px;
@@ -134,6 +136,9 @@ header{
         transition: 0.5s;
         animation: updown 2s infinite;
         position: relative;
+        z-index: 0;
+        
+    
     }
 
     @keyframes updown {
@@ -180,6 +185,10 @@ header{
             z-index: -1;
             background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                
             font-size: 25px;
+            .buttonStart{
+                opacity: 1;
+                pointer-events: visible;
+            }
                 
         }
         .buttonStart{

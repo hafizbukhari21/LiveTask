@@ -3,18 +3,25 @@ $(document).ready(function () {
     navbarBurgerIconResposiveTrigger()
     mainContentAnim()        
     window.setTimeout(function () {
-        modalController() 
-    },4000)
-    //sss
-    
+        modalController()
+    },4000) 
+    window.setTimeout(function () {
+        setUpGoTOpButton()
+    },10000) 
     
 });
+
+function setUpGoTOpButton(){
+    let goTopButton = document.querySelector(".goTopButton")
+    goTopButton.style.opacity = 1
+}
 
 function modalController(){// dummy time on when loading data
     $("#myModal").modal();
     animateValue("totalregistered",1,Random(),6000)
     animateValue("totalproject",1,Random(),6000)
     animateValue("other",1,Random(),6000)
+    
 }
 
 function scrollingNavbarEvent(){
@@ -25,7 +32,7 @@ function scrollingNavbarEvent(){
         if(window.innerWidth > 858){   
             buttonStart.classList.toggle("buttonStartSticky", window.scrollY>0) 
         } 
-        else if (window.innerWidth == 375) {
+        else  {
            buttonStart.classList.add("buttonStartSticky") 
         }  
     })//header navbar add background on vertical scrolling

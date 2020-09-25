@@ -139,6 +139,8 @@ header ul li a:hover {
   height: 100vh;
   top: 90vh;
   left: 95%;
+  z-index: 0;
+  opacity: 0;
 }
 
 .goTopButton a {
@@ -153,6 +155,7 @@ header ul li a:hover {
   -webkit-animation: updown 2s infinite;
           animation: updown 2s infinite;
   position: relative;
+  z-index: 0;
 }
 
 @-webkit-keyframes updown {
@@ -206,6 +209,10 @@ header ul li a:hover {
     z-index: -1;
     background: linear-gradient(123deg, #0d102f 0%, #0d103c 100%);
     font-size: 25px;
+  }
+  header ul .buttonStart {
+    opacity: 1;
+    pointer-events: visible;
   }
   header .buttonStart {
     opacity: 1;
