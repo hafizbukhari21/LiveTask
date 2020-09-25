@@ -2,9 +2,9 @@ $(document).ready(function () {
     scrollingNavbarEvent()
     navbarBurgerIconResposiveTrigger()
     mainContentAnim()        
-    // window.setTimeout(function () {
-    //     modalController() 
-    // },4000)
+    window.setTimeout(function () {
+        modalController() 
+    },4000)
     
     
 });
