@@ -252,7 +252,7 @@
         width: 100%;
         padding: 0px $leftRight-padding-nonResponsive;
         .part1{
-            padding-top: 0vh;
+            padding-top: 10vh;
             margin-top: 0vh;
             display: grid;
             grid-template-columns:none ;
@@ -275,6 +275,7 @@
             }
         }
         .part2{
+            padding-top: 10vh;
             display: block;
             grid-template-columns:0fr 1fr 0fr;
             height: 100vh;

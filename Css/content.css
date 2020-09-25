@@ -278,7 +278,7 @@
     padding: 0px 10%;
   }
   .content .part1 {
-    padding-top: 0vh;
+    padding-top: 10vh;
     margin-top: 0vh;
     display: -ms-grid;
     display: grid;
@@ -308,6 +308,7 @@
     width: 20vh;
   }
   .content .part2 {
+    padding-top: 10vh;
     display: block;
     -ms-grid-columns: 0fr 1fr 0fr;
         grid-template-columns: 0fr 1fr 0fr;
