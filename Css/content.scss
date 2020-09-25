@@ -1,6 +1,7 @@
 @import "../Css/variable";
 
 .banner{
+    scroll-behavior: smooth;
     background-color: $dark-Blue;
     height: 100vh;
     width: 100%;
@@ -92,6 +93,7 @@
 }
 
 .content{
+    scroll-behavior: smooth;
     background-color: $dark-Blue;
     color: $font-over-blue;
     padding-top: 20vh;
@@ -102,7 +104,7 @@
         display: grid;
         grid-template-columns:1fr 1fr 1fr ;
         min-height: auto;
-        grid-gap: 10%;
+        grid-gap: 4%;
         // padding: 5% 0%;
         align-items: stretch;
         
@@ -118,7 +120,7 @@
             
         
             img{
-                width: 70%;
+                width: 40%;
                 margin-bottom: 5vh;
             }
             h3{
@@ -131,6 +133,7 @@
                 width: 100%;
             }
             p{
+                text-align: justify;
                 font-size: 20px;
             }
         }

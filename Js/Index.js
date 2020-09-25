@@ -5,10 +5,6 @@ $(document).ready(function () {
     window.setTimeout(function () {
         modalController()
     },4000)// 
-    window.setTimeout(function () {
-        setUpGoTOpButton()
-    },10000) 
-    
 });
 
 function setUpGoTOpButton(){
@@ -31,9 +27,11 @@ function scrollingNavbarEvent(){
         header.classList.toggle("sticky", window.scrollY > 0) 
         if(window.innerWidth > 858){   
             buttonStart.classList.toggle("buttonStartSticky", window.scrollY>0) 
+            setUpGoTOpButton()
         } 
         else  {
            buttonStart.classList.add("buttonStartSticky") 
+           setUpGoTOpButton()
         }  
     })//header navbar add background on vertical scrolling
 }
