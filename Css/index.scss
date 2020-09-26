@@ -129,7 +129,7 @@ header{
     top:90vh;
     left: 95%;
     z-index: 0;
-    opacity: 0;
+    
 
     a{
         padding: 10px;
@@ -142,6 +142,7 @@ header{
         animation: updown 2s infinite;
         position: relative;
         z-index: 0;
+        opacity: 0.5;
         
         
     
@@ -161,6 +162,7 @@ header{
     a:hover{
         background-color: $font-over-blue;
         color: $pink;
+        opacity: 1;
     }
 
 
@@ -191,13 +193,15 @@ header{
             z-index: -1;
             background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);                
             font-size: 25px;
-            .buttonStart{
-                opacity: 1;
-                pointer-events: visible;
-                
-            }
+            
             li{
                 margin-left:0px;
+                .buttonStart{
+                    opacity: 1;
+                    pointer-events: visible;
+                    margin-left: 0px;
+                    
+                }
                 a{
                     margin-left: 0px;
                 }

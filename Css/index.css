@@ -146,7 +146,6 @@ header ul li a:hover {
   top: 90vh;
   left: 95%;
   z-index: 0;
-  opacity: 0;
 }
 
 .goTopButton a {
@@ -162,11 +161,13 @@ header ul li a:hover {
           animation: updown 2s infinite;
   position: relative;
   z-index: 0;
+  opacity: 0.5;
 }
 
 .goTopButton a:hover {
   background-color: #FAFAFA;
   color: #33C17A;
+  opacity: 1;
 }
 
 @media (max-width: 858px) {
@@ -192,11 +193,12 @@ header ul li a:hover {
     background: linear-gradient(123deg, #0d102f 0%, #0d103c 100%);
     font-size: 25px;
   }
-  header ul .buttonStart {
+  header ul li {
+    margin-left: 0px;
+  }
+  header ul li .buttonStart {
     opacity: 1;
     pointer-events: visible;
-  }
-  header ul li {
     margin-left: 0px;
   }
   header ul li a {
