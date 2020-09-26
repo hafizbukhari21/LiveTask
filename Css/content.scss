@@ -140,9 +140,10 @@
     //     }
     // }
     .part2{
-       display: grid;
-       grid-template-columns:1fr 1fr; 
-       height: 80vh;
+        padding-top: 20vh;
+        display: grid;
+        grid-template-columns:1fr 1fr; 
+        height: 90vh;
     //    padding: 5% 0%;
    
        .image{

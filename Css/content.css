@@ -119,11 +119,12 @@
 }
 
 .content .part2 {
+  padding-top: 20vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 80vh;
+  height: 90vh;
 }
 
 .content .part2 .image {
