@@ -196,6 +196,12 @@ header ul li a:hover {
     opacity: 1;
     pointer-events: visible;
   }
+  header ul li {
+    margin-left: 0px;
+  }
+  header ul li a {
+    margin-left: 0px;
+  }
   header .buttonStart {
     opacity: 1;
   }
