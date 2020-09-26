@@ -1,7 +1,8 @@
 $(document).ready(function () {
     scrollingNavbarEvent()
     navbarBurgerIconResposiveTrigger()
-    mainContentAnim()        
+    mainContentAnim()
+    $().show();        
     // window.setTimeout(function () {
     //     modalController()
     // },4000)// 
