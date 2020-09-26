@@ -202,8 +202,10 @@
        justify-content: space-around;
       
        .box:hover img{
-           width: 115%;
+           width: 120%;
            opacity: 0.7;
+           left: -10%;
+           top: -10%;
        }
       
 
@@ -215,7 +217,8 @@
            margin-bottom: 5%;
            transition: 0.5s;
            img{
-               
+               top: 0px;
+               left: 0px;
                width: 102%;
                position: absolute;
                opacity: 0.4;

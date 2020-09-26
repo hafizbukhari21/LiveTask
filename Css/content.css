@@ -200,8 +200,10 @@
 }
 
 .content .part3 .box:hover img {
-  width: 115%;
+  width: 120%;
   opacity: 0.7;
+  left: -10%;
+  top: -10%;
 }
 
 .content .part3 .box {
@@ -215,6 +217,8 @@
 }
 
 .content .part3 .box img {
+  top: 0px;
+  left: 0px;
   width: 102%;
   position: absolute;
   opacity: 0.4;
