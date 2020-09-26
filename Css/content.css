@@ -208,7 +208,7 @@
 
 .content .part3 .box {
   width: 70vh;
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
   overflow: hidden;
   margin-bottom: 5%;
@@ -361,7 +361,7 @@
     opacity: 1;
   }
   .content .part2 .description .buttondescription a img {
-    width: 40%;
+    width: 20%;
   }
   .content .part2 .description .buttondescription a span {
     background-color: #33C17A;
@@ -386,11 +386,11 @@
     opacity: 0.8;
     width: 135%;
     left: -17.5%;
-    top: -17.5%;
+    top: 0%;
   }
   .content .part3 .box {
     width: 100%;
-    height: 50vh;
+    min-height: 50vh;
     position: relative;
     overflow: hidden;
     margin-bottom: 10%;
@@ -398,7 +398,7 @@
   .content .part3 .box img {
     width: 150%;
     left: -25%;
-    top: -25%;
+    top: -0%;
     position: absolute;
     opacity: 0.5;
   }
@@ -409,9 +409,12 @@
     display: grid;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content .part3 .box .boxDesc div {
+    padding-top: 100%;
   }
   .content .part3 .box .boxDesc div h3 {
     font-weight: bold;
