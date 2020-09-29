@@ -164,9 +164,13 @@
           h5{
               font-size: 40px;
               color: $pink;
+              padding-bottom: 20px;
+              
           }
           p{
+                padding-bottom: 20px;
               font-size: 20px;
+              
           }
           .buttondescription{
               grid-template-columns: none;
@@ -244,6 +248,7 @@
                         font-size: 30px;
                         color: $pink;
                         font-weight: 400;
+                        padding-bottom: 10px;
                     }
                     p{
      
@@ -457,7 +462,7 @@
                grid-template-rows:1fr;
                text-align: center;
                h5{
-                   font-size: 40px;
+                   font-size: 30px;
                    color: $pink;
                }
                p{
@@ -475,7 +480,7 @@
                     transition: 0.5s;
                     opacity: 1;
                     img{
-                        width: 20%;
+                        width: 40%;
                     }
                     span{
                         background-color: $pink;
@@ -532,6 +537,8 @@
                          padding-top: 100%;
                          h3{
                            font-weight: bold;
+                           font-size: 30px;
+                           padding-bottom: 5px;
                          }
                          p{
           
