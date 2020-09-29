@@ -31,7 +31,7 @@
 }
 
 .banner .my_container .description .wrapper h1 {
-  font-size: 50px;
+  font-size: 3em;
   color: #33C17A;
   letter-spacing: 2px;
   padding: 0px;
@@ -121,6 +121,7 @@
 }
 
 .content .part2 {
+  margin-top: 1%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -141,7 +142,7 @@
 }
 
 .content .part2 .image img {
-  width: 50%;
+  width: 40%;
 }
 
 .content .part2 .description {
@@ -294,7 +295,7 @@
     padding-right: 10px;
   }
   .banner .my_container .description .wrapper h1 {
-    font-size: 30px;
+    font-size: 3em;
     color: #33C17A;
     letter-spacing: 2px;
     padding: 0px;
