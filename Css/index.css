@@ -170,7 +170,7 @@ header ul li a:hover {
   opacity: 1;
 }
 
-@media (max-width: 858px) {
+@media (max-width: 900px) {
   .sticky {
     background-color: #0D102F;
     padding: 2.5% 10%;

@@ -1,7 +1,6 @@
 .banner {
   scroll-behavior: smooth;
   background-color: #0D102F;
-  height: 100vh;
   width: 100%;
   padding: 0% 10%;
 }
@@ -11,8 +10,6 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 100vh;
-      grid-template-rows: 100vh;
   grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -20,6 +17,7 @@
 }
 
 .banner .my_container .description {
+  padding: 10% 0%;
   margin-top: 0vh;
   height: 100vh;
   display: -ms-grid;
@@ -33,7 +31,7 @@
 }
 
 .banner .my_container .description .wrapper h1 {
-  font-size: 55px;
+  font-size: 50px;
   color: #33C17A;
   letter-spacing: 2px;
   padding: 0px;
@@ -48,7 +46,7 @@
   width: 100%;
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
 }
 
 .banner .my_container .description .wrapper .getStarted {
@@ -59,6 +57,7 @@
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .banner .my_container .description .wrapper .getStarted:hover {
@@ -69,19 +68,23 @@
 }
 
 .banner .my_container .image {
+  margin-top: 0vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   position: relative;
-  top: 0px;
   -webkit-animation: mainImage 4s infinite;
           animation: mainImage 4s infinite;
 }
 
-.banner .my_container .image .wrapper {
+.banner .my_container .image .wrapperImg {
   text-align: center;
+  position: relative;
 }
 
-.banner .my_container .image .wrapper img {
+.banner .my_container .image .wrapperImg img {
   width: 100%;
-  height: auto;
 }
 
 @-webkit-keyframes mainImage {
@@ -89,7 +92,7 @@
     top: 0px;
   }
   50% {
-    top: 30px;
+    top: -40px;
   }
   100% {
     top: 0px;
@@ -101,7 +104,7 @@
     top: 0px;
   }
   50% {
-    top: 30px;
+    top: -40px;
   }
   100% {
     top: 0px;
@@ -112,19 +115,20 @@
   scroll-behavior: smooth;
   background-color: #0D102F;
   color: #FAFAFA;
-  padding-top: 20vh;
   min-height: 100vh;
   width: 100%;
   padding: 0px 10%;
 }
 
 .content .part2 {
-  padding-top: 20vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  height: 90vh;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content .part2 .image {
@@ -188,7 +192,7 @@
 }
 
 .content .part3 {
-  padding-top: 10vh;
+  margin-top: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +212,7 @@
 
 .content .part3 .box {
   width: 70vh;
-  min-height: 50vh;
+  min-height: 30vh;
   position: relative;
   overflow: hidden;
   margin-bottom: 5%;
@@ -254,6 +258,96 @@
   font-weight: 400;
 }
 
+@media (max-width: 1124px) {
+  .banner {
+    scroll-behavior: smooth;
+    background-color: #0D102F;
+    max-height: 100vh;
+    width: 100%;
+    padding: 0% 10%;
+    margin-bottom: 20%;
+  }
+  .banner .my_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 100vh;
+        grid-template-rows: 100vh;
+    grid-gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .my_container .description {
+    margin-top: 0vh;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  .banner .my_container .description .wrapper {
+    padding-right: 10px;
+  }
+  .banner .my_container .description .wrapper h1 {
+    font-size: 30px;
+    color: #33C17A;
+    letter-spacing: 2px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  .banner .my_container .description .wrapper p {
+    color: #FAFAFA;
+    text-align: justify;
+    width: 100%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 5vh;
+  }
+  .banner .my_container .description .wrapper .getStarted {
+    background-color: #33C17A;
+    padding: 10px 20px;
+    color: #FAFAFA;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .banner .my_container .description .wrapper .getStarted:hover {
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #33C17A;
+    background-color: #FAFAFA;
+  }
+  .banner .my_container .image {
+    position: relative;
+    -webkit-animation: mainImage 4s infinite;
+            animation: mainImage 4s infinite;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .banner .my_container .image .wrapper {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    padding-top: 50vh;
+    -webkit-transform: translateY(-25vh);
+            transform: translateY(-25vh);
+  }
+  .banner .my_container .image .wrapper img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 858px) {
   .banner {
     background-color: #0D102F;
@@ -262,6 +356,7 @@
     min-height: 100vh;
     width: 100%;
     padding: 0% 10%;
+    margin-bottom: 0%;
   }
   .banner .my_container {
     display: -ms-grid;

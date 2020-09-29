@@ -1,8 +1,9 @@
 $(document).ready(function () {
+    console.log(window.innerWidth) 
     scrollingNavbarEvent()
     navbarBurgerIconResposiveTrigger()
     mainContentAnim()
-    $().show();        
+    $().show();       
     // window.setTimeout(function () {
     //     modalController()
     // },4000)// 
@@ -11,6 +12,7 @@ $(document).ready(function () {
 function setUpGoTOpButton(){
     let goTopButton = document.querySelector(".goTopButton")
     goTopButton.style.opacity = 1
+    
 }
 
 function modalController(){// dummy time on when loading data
