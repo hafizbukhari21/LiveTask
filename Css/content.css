@@ -283,7 +283,7 @@
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  top: 10vh;
+  top: 30%;
   font-weight: 700;
 }
 
@@ -307,7 +307,7 @@
 }
 
 .content .part3 .box .boxDesc:hover a {
-  top: 0vh;
+  top: 0%;
 }
 
 @media (max-width: 1124px) {
