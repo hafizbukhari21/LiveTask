@@ -6,6 +6,7 @@
     // max-height: 100vh;
     width: 100%;
     padding: 0% $leftRight-padding-nonResponsive;
+
     .my_container{
         
         // padding-top: 25vh;
@@ -15,14 +16,16 @@
         grid-gap: 20px;
         align-items: center;
         
-
+        
         .description{
+            
             padding: 10% 0%;
             margin-top: 0vh;
-            height: 100vh;
+            // height: 100vh;
             display: grid;       
             grid-template-rows: 1fr 1fr 1fr;
             .wrapper{
+
                 padding-right: 10px;
                 h1{
                     font-size: 3em;
@@ -61,6 +64,7 @@
             
         }
         .image{
+            
             margin-top: 0vh;
             display: flex;
             margin: auto;
@@ -268,7 +272,7 @@
     .banner{
         scroll-behavior: smooth;
         background-color: $dark-Blue;
-        max-height: 100vh;
+        // max-height: 100vh;
         width: 100%;
         padding: 0% $leftRight-padding-nonResponsive;
         margin-bottom: 20%; 
@@ -279,14 +283,12 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 100vh;
             grid-gap: 20px;
-            
             align-items: center;
             
     
             .description{
-                
+
                 margin-top: 0vh;
-                height: 100vh;
                 display: grid;       
                 grid-template-rows: 1fr 1fr 1fr;
                 .wrapper{
@@ -306,16 +308,21 @@
                         width: 100%;
                         font-size: 17px;
                         line-height: 30px;
-                        margin-bottom: 5vh;
+                        margin-bottom: 2vh;
                     }
                     .getStarted{
+                        font-size: 15px;
                         background-color: $pink;
                         padding: 10px 20px;
                         color: $font-over-blue;
-                        font-weight: bold;
+                        font-weight: 900;
                         border-radius: 10px;
                         transition: 0.5s;
     
+                    }
+                    span{
+                        font-size: 15;
+                        padding-right: 15px;
                     }
                     .getStarted:hover{
                         padding: 12px 24px;
@@ -357,7 +364,7 @@
         background-color: $dark-Blue;
         background-image: url("../Assets/bgMainTranparent.png");
         background-size: 100% auto ;
-        min-height: 100vh;
+        // min-height: 100vh;
         width: 100%;
         padding: 0% $leftRight-padding-nonResponsive;
         margin-bottom: 0%; 
@@ -375,7 +382,7 @@
                
                 .wrapper{
                     h1{
-                        font-size: 35px;
+                        font-size: 40px;
                         color:$pink;
                         letter-spacing: 2px;
                         padding: 0px;
