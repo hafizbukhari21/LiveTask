@@ -195,6 +195,7 @@
 
 .content .part3 {
   margin-top: 20%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,8 +214,9 @@
 }
 
 .content .part3 .box {
+  border-radius: 20px;
   width: 70vh;
-  min-height: 30vh;
+  min-height: 50vh;
   position: relative;
   overflow: hidden;
   margin-bottom: 5%;
@@ -223,9 +225,9 @@
 }
 
 .content .part3 .box img {
-  top: 0px;
-  left: 0px;
-  width: 102%;
+  top: -100px;
+  left: -10vh;
+  width: 100vh;
   position: absolute;
   opacity: 0.4;
   -webkit-transition: 0.5s;
@@ -247,18 +249,65 @@
 }
 
 .content .part3 .box .boxDesc div {
-  padding: 0px 10px;
   width: 100%;
-  padding-top: 50%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0d102f), to(rgba(13, 16, 47, 0)));
-  background: linear-gradient(0deg, #0d102f 0%, rgba(13, 16, 47, 0) 100%);
+  background-color: #33C17A;
+  position: relative;
 }
 
 .content .part3 .box .boxDesc div h3 {
-  font-size: 30px;
-  color: #33C17A;
-  font-weight: 400;
+  font-size: 25px;
+  color: #FAFAFA;
+  font-weight: 600;
   padding-bottom: 10px;
+  padding: 10px 10px;
+}
+
+.content .part3 .box .boxDesc div p {
+  color: #0D102F;
+  padding-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.content .part3 .box .boxDesc div a {
+  background-color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 10vh;
+  font-weight: 700;
+}
+
+.content .part3 .box .boxDesc div a i {
+  padding: 2px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 3px;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content .part3 .box .boxDesc div a:hover {
+  color: #33C17A;
+}
+
+.content .part3 .box .boxDesc div a:hover i {
+  padding-left: 10px;
+}
+
+.content .part3 .box .boxDesc:hover a {
+  top: 0vh;
 }
 
 @media (max-width: 1124px) {
@@ -474,33 +523,40 @@
     text-decoration: none;
   }
   .content .part3 {
-    display: block;
+    margin-top: 20%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 10VH;
   }
   .content .part3 .box:hover img {
+    width: 120%;
     opacity: 0.8;
-    width: 135%;
-    left: -17.5%;
-    top: 0%;
+    left: -10%;
+    top: 0px;
   }
   .content .part3 .box {
-    width: 100%;
+    border-radius: 20px;
+    width: 70vh;
     min-height: 50vh;
     position: relative;
     overflow: hidden;
-    margin-bottom: 10%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .content .part3 .box img {
-    width: 150%;
-    left: -25%;
-    top: -0%;
+    top: -100px;
+    left: -10vh;
+    width: 100vh;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .content .part3 .box .boxDesc {
     height: 100%;
@@ -509,17 +565,18 @@
     display: grid;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .content .part3 .box .boxDesc div {
-    padding-top: 100%;
+    width: 100%;
   }
   .content .part3 .box .boxDesc div h3 {
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=content.css.map */
