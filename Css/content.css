@@ -1,6 +1,9 @@
 .banner {
   scroll-behavior: smooth;
   background-color: #0D102F;
+  background-image: url("../Assets/bgMainTranparent.png");
+  background-size: 100% auto;
+  background-attachment: fixed;
   width: 100%;
   padding: 0% 10%;
 }
