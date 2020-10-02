@@ -69,7 +69,7 @@
             display: flex;
             margin: auto;
             position: relative;
-            animation: mainImage 4s infinite;
+            // animation: mainImage 4s infinite;
 
             .wrapperImg{
 
@@ -206,6 +206,7 @@
    }
 
     .part3{
+        
         margin-top: 20%;
         min-height: 100vh;
        display: flex;
@@ -323,22 +324,24 @@
         // max-height: 100vh;
         width: 100%;
         padding: 0% $leftRight-padding-nonResponsive;
-        margin-bottom: 20%;
+        margin-bottom: 0%;
         .my_container{
 
             // padding-top: 25vh;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 100vh;
-            grid-gap: 20px;
-            align-items: center;
+            margin-top: 5vh;
+            grid-template-rows: minmax(10vh,auto);
+            grid-gap: 30px;
+            align-items: stretch;
+            
 
 
             .description{
-
+                
                 margin-top: 0vh;
                 display: grid;
-                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-rows: auto;
                 .wrapper{
                     padding-right: 10px;
                     h1{
@@ -350,7 +353,7 @@
                         margin-bottom: 2vh;
                         width: 100%;
                     }
-                    p{
+                    p{ 
                         color: $font-over-blue;
                         text-align: justify;
                         width: 100%;
@@ -359,7 +362,7 @@
                         margin-bottom: 2vh;
                     }
                     .getStarted{
-                        font-size: 15px;
+                        font-size: 10px;
                         background-color: $pink;
                         padding: 10px 20px;
                         color: $font-over-blue;
@@ -383,14 +386,14 @@
             }
             .image{
                 position: relative;
-                animation: mainImage 4s infinite;
+                
                 display: grid;
                 grid-template-rows: 1fr;
                 align-items: center;
-                height: 100vh;
+                
                 .wrapper{
                     text-align: center;
-                    height: 100vh;
+                    
                     position: relative;
                     padding-top: 50vh;
                     transform: translateY(-25vh);
@@ -401,6 +404,224 @@
                 }
             }
 
+        }
+    }
+    .content{
+        scroll-behavior: smooth;
+        background-color: $dark-Blue;
+        color: $font-over-blue;
+        min-height: 0vh;
+        width: 100%;
+        padding: 0px $leftRight-padding-nonResponsive;
+    
+    
+        // .part1{
+        //     display: grid;
+        //     grid-template-columns:1fr 1fr 1fr ;
+        //     min-height: 100vh;
+        //     grid-gap: 4%;
+        //     // padding: 5% 0%;
+        //     align-items: center;
+    
+        //     div{
+        //         margin-top: 10vh;
+        //         text-align: center;
+        //         justify-items: center;
+        //         display: grid;
+        //         //grid-template-rows: minmax(,auto);
+        //         grid-gap: 6%;
+        //         margin-bottom: 20vh;
+        //         border-radius: 10px;
+    
+    
+        //         img{
+        //             width: 50%;
+        //             margin-bottom: 5vh;
+        //         }
+        //         h3{
+        //             font-size: 40px;
+        //             color: $pink;
+        //             letter-spacing: 2px;
+        //             padding: 0px;
+        //             margin: 0px;
+        //             margin-bottom: 2vh;
+        //             width: 100%;
+        //         }
+        //         p{
+        //             text-align: justify;
+        //             font-size: 20px;
+        //         }
+        //     }
+        // }
+        .part2{
+            
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            min-height: 20vh;
+            height: auto;
+            align-items: center;
+        //    padding: 5% 0%;
+            
+           .image{
+               justify-items: center;
+               text-align: center;
+               position: relative;
+               top: 0px;
+               animation: mainImage 4s infinite;
+               img{
+                   width: 40%;
+               }
+           }
+           .description{
+              display: grid;
+              grid-template-rows:1fr ;
+              h5{
+                  font-size: 40px;
+                  color: $pink;
+                  padding-bottom: 20px;
+    
+              }
+              p{
+                    padding-bottom: 20px;
+                  font-size: 8px;
+                  line-height: 2em;
+    
+              }
+              .buttondescription{
+                  grid-template-columns: none;
+                  grid-template-rows: none;
+                  a{
+                    margin-right: 10px;
+                    border-radius: 5px;
+                    transition: 0.5s;
+                    opacity: 1;
+                    img{
+                        width: 20%;
+                    }
+                    span{
+    
+                        background-color: $pink;
+                        color: $font-over-blue;
+                        border-radius: 10px;
+                        padding: 6px 11px;
+    
+                    }
+                  }
+                  a:hover{
+                      opacity: 0.6;
+                      text-decoration: none;
+                  }
+              }
+           }
+       }
+    
+        .part3{
+            margin-top: 0%;
+            min-height: 100vh;
+           display: flex;
+           position: static;
+           flex-wrap: wrap;
+           justify-content: space-around;
+    
+           .box:hover img {
+               width: 120%;
+               opacity: 0.8;
+               left: -10%;
+               top: -10%;
+           }
+    
+           
+    
+    
+    
+           .box{
+               border-radius: 20px;
+               width: 70vh;
+               min-height: 50vh;
+               position: relative;
+               overflow: hidden;
+               margin-bottom: 5%;
+               transition: 0.5s;
+               img{
+                   top: -100px;
+                   left: -10vh;
+                   width: 100vh;
+                   position: absolute;
+                   opacity: 0.4;
+                   transition: 0.5s;
+               }
+    
+               .boxDesc{
+    
+                    height: 100%;
+                    position: relative;
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    align-items: flex-end;
+                    transition: 0.5s;
+                    div{
+                        // padding: 20px 10px;
+                        
+                        width: 100%;
+                        // padding-top: 5%;
+                        // background: linear-gradient(123deg, rgba(13,16,47,1) 0%, rgba(13,16,60,1) 100%);
+                        background-color: $pink;
+                        position: relative;
+                        h3{
+                            font-size: 25px;
+                            color: $font-over-blue;
+                            font-weight: 600;
+                            padding-bottom: 10px;
+                            padding: 10px 10px;
+                        }
+                        p{
+                            color: $dark-Blue;
+                            padding-bottom: 10px;
+                            padding: 5px 10px;
+                        }
+                        a{  
+                            background-color: $font-over-blue;
+                            display: flex;
+                            width: 100%;
+                            text-align: center;
+                            justify-content: center;
+                            padding: 10px 0px;
+                            text-decoration: none;
+                            position: relative;
+                            transition: 0.5s;
+                            top: 30%;
+                            font-weight: 700;
+                           i{
+                               padding: 2px 0px;
+                               box-sizing: border-box;
+                               padding-left: 3px;
+                               font-size: 14px;
+                               position: relative;
+                               transition: 0.5s;
+                           }
+                           
+    
+                           
+                        }
+                        a:hover{
+                            color: $pink;
+                        }
+    
+                        a:hover i{
+                            padding-left: 10px;
+    
+                        }
+                        
+                    
+                    }
+    
+               }
+               .boxDesc:hover a{
+                   top:0%;
+               }
+           }
+    
+    
         }
     }
 

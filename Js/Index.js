@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log(window.innerWidth) 
+    // alert(window.innerWidth)
     scrollingNavbarEvent()
     navbarBurgerIconResposiveTrigger()
     mainContentAnim()

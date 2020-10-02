@@ -73,8 +73,6 @@
   display: flex;
   margin: auto;
   position: relative;
-  -webkit-animation: mainImage 4s infinite;
-          animation: mainImage 4s infinite;
 }
 
 .banner .my_container .image .wrapperImg {
@@ -316,26 +314,27 @@
     background-color: #0D102F;
     width: 100%;
     padding: 0% 10%;
-    margin-bottom: 20%;
+    margin-bottom: 0%;
   }
   .banner .my_container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 100vh;
-        grid-template-rows: 100vh;
-    grid-gap: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-top: 5vh;
+    -ms-grid-rows: minmax(10vh, auto);
+        grid-template-rows: minmax(10vh, auto);
+    grid-gap: 30px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   .banner .my_container .description {
     margin-top: 0vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
   .banner .my_container .description .wrapper {
     padding-right: 10px;
@@ -358,7 +357,7 @@
     margin-bottom: 2vh;
   }
   .banner .my_container .description .wrapper .getStarted {
-    font-size: 15px;
+    font-size: 10px;
     background-color: #33C17A;
     padding: 10px 20px;
     color: #FAFAFA;
@@ -379,8 +378,6 @@
   }
   .banner .my_container .image {
     position: relative;
-    -webkit-animation: mainImage 4s infinite;
-            animation: mainImage 4s infinite;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
@@ -388,11 +385,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100vh;
   }
   .banner .my_container .image .wrapper {
     text-align: center;
-    height: 100vh;
     position: relative;
     padding-top: 50vh;
     -webkit-transform: translateY(-25vh);
@@ -400,6 +395,182 @@
   }
   .banner .my_container .image .wrapper img {
     width: 100%;
+  }
+  .content {
+    scroll-behavior: smooth;
+    background-color: #0D102F;
+    color: #FAFAFA;
+    min-height: 0vh;
+    width: 100%;
+    padding: 0px 10%;
+  }
+  .content .part2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    min-height: 20vh;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content .part2 .image {
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    -webkit-animation: mainImage 4s infinite;
+            animation: mainImage 4s infinite;
+  }
+  .content .part2 .image img {
+    width: 40%;
+  }
+  .content .part2 .description {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .content .part2 .description h5 {
+    font-size: 40px;
+    color: #33C17A;
+    padding-bottom: 20px;
+  }
+  .content .part2 .description p {
+    padding-bottom: 20px;
+    font-size: 8px;
+    line-height: 2em;
+  }
+  .content .part2 .description .buttondescription {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
+  .content .part2 .description .buttondescription a {
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+  }
+  .content .part2 .description .buttondescription a img {
+    width: 20%;
+  }
+  .content .part2 .description .buttondescription a span {
+    background-color: #33C17A;
+    color: #FAFAFA;
+    border-radius: 10px;
+    padding: 6px 11px;
+  }
+  .content .part2 .description .buttondescription a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+  }
+  .content .part3 {
+    margin-top: 0%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content .part3 .box:hover img {
+    width: 120%;
+    opacity: 0.8;
+    left: -10%;
+    top: -10%;
+  }
+  .content .part3 .box {
+    border-radius: 20px;
+    width: 70vh;
+    min-height: 50vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .content .part3 .box img {
+    top: -100px;
+    left: -10vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 0.4;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .content .part3 .box .boxDesc {
+    height: 100%;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .content .part3 .box .boxDesc div {
+    width: 100%;
+    background-color: #33C17A;
+    position: relative;
+  }
+  .content .part3 .box .boxDesc div h3 {
+    font-size: 25px;
+    color: #FAFAFA;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding: 10px 10px;
+  }
+  .content .part3 .box .boxDesc div p {
+    color: #0D102F;
+    padding-bottom: 10px;
+    padding: 5px 10px;
+  }
+  .content .part3 .box .boxDesc div a {
+    background-color: #FAFAFA;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 30%;
+    font-weight: 700;
+  }
+  .content .part3 .box .boxDesc div a i {
+    padding: 2px 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 3px;
+    font-size: 14px;
+    position: relative;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .content .part3 .box .boxDesc div a:hover {
+    color: #33C17A;
+  }
+  .content .part3 .box .boxDesc div a:hover i {
+    padding-left: 10px;
+  }
+  .content .part3 .box .boxDesc:hover a {
+    top: 0%;
   }
 }
 
